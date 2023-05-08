@@ -1,4 +1,4 @@
-0x15. C - File I/O
+Project
 0. Write a function that reads a text file and prints it to the POSIX standard output.
 
 Prototype: ssize_t read_textfile(const char *filename, size_t letters);
@@ -55,6 +55,4 @@ If the file is not an ELF file, or on error, exit with status code 98 and displa
 You are allowed to use lseek once
 You are allowed to use read a maximum of 2 times at runtime
 You are allowed to have as many functions as you want in your source file
-You are allowed to use printf
-man elf, readelf
-
+You are allowed to use printf.
