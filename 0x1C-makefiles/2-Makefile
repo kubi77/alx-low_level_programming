@@ -1,18 +1,11 @@
 # Useful Makefile
 
 CC = gcc
-SRC = main.c utils.c
+SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
 
-all: $(NAME)
+all: $(OBJ)
 
 $(NAME): $(OBJ)
-	$(CC) -o $(NAME) $(OBJ)
-
-%.o: %.c
-	$(CC) -c $< -o $@
-
-clean:
-	rm -f $(OBJ) $(NAME)
-
+	$(CC) -o $(OBJ) $(NAME)
